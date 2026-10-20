@@ -11,7 +11,7 @@ public class KafeDoWhile23 {
         do {
 
             //Input nama pelanggan
-            System.out.println("Masukkan nama pelanggan (ketik 'batal' untuk keluar): ");
+            System.out.print("Masukkan nama pelanggan (ketik 'batal' untuk keluar): ");
             namaPelanggan = sc.nextLine();
              
             //Pembatalan transaksi
