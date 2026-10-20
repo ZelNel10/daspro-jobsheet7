@@ -2,18 +2,22 @@ import java.util.Scanner;
 
 public class SiakadWhile23 {
     public static void main(String[] args) {
+        //Scanner & deklarasi variabel
         Scanner sc = new Scanner(System.in);
         int nilai, jml = 19, i = 0;
 
+        //Perulangan jumlah mahasiswa
         while (i < jml) {
         System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
         nilai = sc.nextInt();
 
+        //Input jika tidak dalam rentang 0-100
         if (nilai < 0 || nilai > 100) {
             System.out.println("Nilai tidak valid. Masukkan lagi nilai yang valid!");
             continue;
         }
 
+        //Kategori penilaian
         if (nilai > 80 && nilai <= 100) {
             System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah A");
             System.out.println("Bagus, pertahankan nilainya!");
@@ -32,5 +36,6 @@ public class SiakadWhile23 {
         }
             i++;
         }
+        sc.close();
     }
 }
